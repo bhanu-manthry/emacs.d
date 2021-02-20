@@ -12,7 +12,11 @@
  )
 
 (setq inhibit-startup-message t)
+(setq ring-bell-function 'ignore)
 (tool-bar-mode -1)
+(display-line-numbers-mode)
+
+(load-theme 'wombat)
 
 (require 'package)
 (setq package-enable-at-startup nil)
